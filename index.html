@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  
     <!-- DaisyUi + Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-
+  <!--icons -->
+  <script src="https://kit.fontawesome.com/0ba8c68b52.js" crossorigin="anonymous"></script>
 
 <!-- Style -->
  <style>
@@ -19,12 +21,84 @@
   font-family: "Manrope", sans-serif;
   
 }
+.header{
+  background: linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
+}
  </style>
+
+ <!-- custom color -->
+ <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'Primary': '#ABEF5F',
+          'white-op': '#FFFFFF00',
+          
+        }
+      }
+    }
+  }
+</script>
 
 
 
 </head>
 <body class="manrope-fonts">
+  <!-- header section -->
+  <header class=" bg-slate-100 h-96">
+    <!-- nav bar completed -->
+    <nav class="container mx-auto ">
+      <div class="navbar">
+        <div class="navbar-start w-full lg:w-1/2 justify-between pt-8 px-5 lg:p-0 lg:justify-start">
+          <div class="dropdown  justify-between items-center">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li class="text-base font-bold text-[#494949]"><a>Home</a></li>
+              <li class="text-base text-[#737373]"><a>Services</a></li>
+              <li class="text-base text-[#737373]"><a>Portfolio</a></li>
+              <li class="text-base text-[#737373]"><a>Blogs</a></li>
+              <li class="text-base text-[#737373]"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <a href="#" class=" lg:text-3xl lg:font-extrabold flex justify-center items-center gap-2"><div class="w-8 h-8 flex justify-center items-center p-4  rounded-full bg-Primary"><i class="fa-solid text-base -rotate-45 fa-arrow-right"></i></div> Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-base font-bold text-[#494949]"><a>Home</a></li>
+            <li class="text-base text-[#737373]"><a>Services</a></li>
+            <li class="text-base text-[#737373]"><a>Portfolio</a></li>
+            <li class="text-base text-[#737373]"><a>Blogs</a></li>
+            <li class="text-base text-[#737373]"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end lg:flex  hidden gap-x-4">
+          <a href="#"><div class="search w-12 h-12 rounded-full bg-white flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></div></a>
+        <a href="#">  <div class="search w-12 h-12 rounded-full bg-white flex justify-center items-center"><i class="fa-solid  fa-cart-shopping"></i></div></a>
+          <a class="btn h-14 w-52 rounded-full text-xl font-extrabold bg-Primary">Book Consult <div class="w-8 h-8 flex justify-center items-center p-4  rounded-full bg-black"><i class="fa-solid text-base  text-white -rotate-45 fa-arrow-right"></i></div></a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main></main>
+  <footer></footer>
 
 </body>
 </html>
